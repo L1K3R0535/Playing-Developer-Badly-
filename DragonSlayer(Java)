@@ -1,0 +1,29 @@
+import java.io.*; //Import statement!
+    public class _char_ { //This is the class name, you will need to call the file you save this as; '_char_.java'
+        //You can rename the class,but the same rules as the previous comment apply.
+        String name; //Defines a string, called 'name'
+        int health; //Defines an integer called health
+        int attack; //Integer called attack
+        double random; //Defines a double called random
+        public _char_(String name){ //function definition
+            this.name = name;  //make the formerly defined variable equal to the value passed later in the code
+            //(When the function is called)
+        }
+        public void setHealth(int sethealth){
+            health = sethealth; //make the formerly defined variable equal to one defined in the function perpetrators.
+        }
+        public void setAttack(int setattack){
+            attack = setattack; //Same here, but with the attack variable.
+        }
+        public void  getRandom(){
+            random = Math.random() * 19 + 1; //Set the value of the defined variable 'random'
+        }
+        public void print_char_(){
+            System.out.print("Hello there user! Check out the stats of "+this.name+"\n");
+            System.out.print("Name: "+name+"\n");
+            System.out.print("Health: "+health+"\n");
+            System.out.print("Attack: "+attack+"\n");
+            System.out.print("Your chance number is: "+random+"\n");
+        }
+    }
+//____ END ____
