@@ -1,0 +1,26 @@
+import java.io.*;
+    public class dragonslayer {
+        public static void main(String args[]){
+            _char_ dragonOne = new _char_("Dragon"); //Make a new object called 'dragonOne'
+            _char_ playerOne = new _char_("Player one"); //Object called 'playerOne'
+            dragonOne.setHealth(100);
+            dragonOne.setAttack(10);
+            dragonOne.getRandom();
+            dragonOne.print_char_();
+            playerOne.setHealth(100);
+            playerOne.setAttack(10);
+            playerOne.getRandom();
+            playerOne.print_char_();
+            do {
+                    if ((playerOne.random) < (dragonOne.random)){
+                        System.out.printf("Oh the dragon is higher in hit chance.\n Hit's first!\n");
+                        player.health -= dragon.attack;
+                }
+                    else {
+                        System.out.printf("You hit first, awesome!!.\n");
+                        dragon.health -= player.attack;
+                }
+            } while((dragon.health > 0) && (player.health > 0));
+        }
+    }
+// ___ END ___
