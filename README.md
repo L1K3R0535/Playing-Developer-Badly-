@@ -1,4 +1,4 @@
-# Please-read-decripton-untitled-
+# !random collection of script's to get started with very basic consepts of game development
 ImTooLazyToBeAGoodDeveloperPerhapsThatsWhyILoveSecurityHaveTheseOldScriptsHopeTheyHelp/Are Enjoyed
 
 So this here is a bad collection of the script's that I starting writing/wrote a few years ago, and to be honest; 
