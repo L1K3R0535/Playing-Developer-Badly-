@@ -13,13 +13,18 @@ I may end up adding to this after all as I did get a little bit further with mak
 """
 import random
 #--comment-space---
+npcOne={"ID":00,"name":"Dave Davidson","job":"Bartender","weed":0,"coke":0,"mdma":0,"cash": 200}
+npcTwo={"ID":00,"name":"Mark Markieson","job":"Shopkeeper","weed":0,"coke":0,"mdma":0,"cash": 2500}
+npclist=[npcOne,npcTwo]
+#--SPACE--
 def name():
     print("Hello welcome to the crime game, a text game where the goal is to become the most prolific: \n'crime lord'\n'gangster'\n'drug dealer'\netc\nThere are a few ways to do this; you can type 'help' in the command issuer.")
     print("Please make a username first.\n")
     i=input("Username: "); return i
+player={"name": name(),"cash":200,"weed":1,"coke":1,"mdma": 1}
 def listnpc():
     for each in npclist:
-        print("List-ID: %i; Name: %s; Job-Title: %s; weed: %i; coke: %i; mdma: %i; cash: %s"%(each["ID"],each["name"],each["job"],each["weed"],each["coke"],each["mdma"],each["cash"]))
+        print("List-ID: %i.\nName: %s.\nJob-Title: %s.\nweed:%i.\ncoke: %i.\nmdma: %i.\ncash: %s."%(each["ID"],each["name"],each["job"],each["weed"],each["coke"],each["mdma"],each["cash"]))
 class market:
     def selectnpc():
         listnpc()
@@ -87,7 +92,7 @@ def _play_():
             market.sell(player,"coke",int(input("amount in grams: ")))
         elif sw == "mdma":
             market.sell(player,"mdma",int(input("amount in grams:" )))
-        elif sw != "weed" or "coke" or "mdma":
+        elif sw != "weed" or sw != "coke" or sw != "mdma":
             print("Try again!")
     elif cmd == "buy":
         bw=input("buy what? :")
